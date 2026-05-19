@@ -1,12 +1,626 @@
-
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en">
 <head>
-  <title>My First Cornerstone Widget</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="color-scheme" content="light dark" />
+  <title>Nova — Precision Crafted Experiences</title>
+  <meta name="description" content="A premium, Apple-style HTML+CSS landing page demo for GitHub Pages." />
+  <link rel="stylesheet" href="styles.css" />
 </head>
-<body style="font-family: Arial; text-align: center; margin-top: 50px;">
-  <h1>✅ My Cornerstone Widget is Live</h1>
-  <p>If you see this inside Cornerstone… you're officially a wizard 🧙</p>
+
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- Announcement -->
+  <div class="announcement" role="region" aria-label="Announcement">
+    <div class="container announcement__inner">
+      <p>
+        <strong>New:</strong> Nova Studio ships with adaptive layouts, silky motion, and zero dependencies.
+        <a href="#pricing" class="announcement__link">Explore pricing</a>
+      </p>
+      <span class="announcement__badge" aria-hidden="true">v1.0</span>
+    </div>
+  </div>
+
+  <!-- Top Nav -->
+  <header class="topbar" role="banner">
+    <div class="container topbar__inner">
+      <a class="brand" href="#" aria-label="Nova home">
+        <span class="brand__mark" aria-hidden="true"></span>
+        <span class="brand__name">Nova</span>
+      </a>
+
+      <nav class="nav" aria-label="Primary">
+        <a href="#highlights">Highlights</a>
+        <a href="#design">Design</a>
+        <a href="#performance">Performance</a>
+        <a href="#compare">Compare</a>
+        <a href="#faq">FAQ</a>
+      </nav>
+
+      <div class="topbar__actions">
+        <a class="link subtle" href="#pricing">Pricing</a>
+        <a class="btn btn--primary" href="#buy">Buy</a>
+      </div>
+
+      <!-- Mobile menu toggle (CSS-only) -->
+      <input class="menu-toggle" type="checkbox" id="menuToggle" aria-label="Open menu" />
+      <label class="menu-btn" for="menuToggle" aria-hidden="true">
+        <span></span><span></span><span></span>
+      </label>
+    </div>
+
+    <!-- Mobile panel (CSS-only) -->
+    <div class="mobile-panel">
+      <div class="container mobile-panel__inner">
+        <a href="#highlights">Highlights</a>
+        <a href="#design">Design</a>
+        <a href="#performance">Performance</a>
+        <a href="#compare">Compare</a>
+        <a href="#faq">FAQ</a>
+        <div class="mobile-panel__cta">
+          <a class="btn btn--primary" href="#buy">Buy</a>
+          <a class="btn btn--ghost" href="#pricing">Pricing</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <main id="main">
+    <section class="hero" aria-label="Hero">
+      <div class="hero__bg" aria-hidden="true">
+        <div class="hero__noise"></div>
+        <div class="hero__blob hero__blob--a"></div>
+        <div class="hero__blob hero__blob--b"></div>
+        <div class="hero__grid"></div>
+      </div>
+
+      <div class="container hero__inner">
+        <div class="hero__copy">
+          <p class="eyebrow">Nova Studio</p>
+          <h1 class="hero__title">
+            Precision. Power.
+            <span class="gradient">Presence.</span>
+          </h1>
+          <p class="hero__subtitle">
+            A cinematic, high-fidelity webpage built with modern HTML & CSS —
+            perfect for stress-testing GitHub Pages and showing off layout capability.
+          </p>
+
+          <div class="hero__actions">
+            <a class="btn btn--primary" href="#buy">Buy Nova</a>
+            <a class="btn btn--ghost" href="#highlights">See highlights</a>
+          </div>
+
+          <div class="hero__meta" role="list" aria-label="Key stats">
+            <div class="stat" role="listitem">
+              <span class="stat__kpi">240Hz</span>
+              <span class="stat__label">Motion-grade UI</span>
+            </div>
+            <div class="stat" role="listitem">
+              <span class="stat__kpi">0</span>
+              <span class="stat__label">Dependencies</span>
+            </div>
+            <div class="stat" role="listitem">
+              <span class="stat__kpi">A+</span>
+              <span class="stat__label">Accessibility baseline</span>
+            </div>
+          </div>
+        </div>
+
+        <aside class="hero__device" aria-label="Product preview">
+          <div class="device">
+            <div class="device__top">
+              <span class="dot dot--r"></span>
+              <span class="dot dot--y"></span>
+              <span class="dot dot--g"></span>
+              <span class="device__title">Nova — Dashboard</span>
+            </div>
+
+            <div class="device__screen">
+              <div class="screen__hero">
+                <div class="screen__ring" aria-hidden="true"></div>
+                <div class="screen__card">
+                  <p class="screen__label">Now running</p>
+                  <h3 class="screen__headline">Adaptive Layout Engine</h3>
+                  <p class="screen__desc">Fluid type, grid intelligence, and motion-aware animations.</p>
+                  <div class="screen__chips" aria-hidden="true">
+                    <span class="chip">Grid</span>
+                    <span class="chip">Glass</span>
+                    <span class="chip">Clamp</span>
+                    <span class="chip">Snap</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="screen__rows" aria-label="Preview items">
+                <div class="row">
+                  <span class="row__icon" aria-hidden="true">⚡</span>
+                  <div class="row__text">
+                    <span class="row__title">Performance-first</span>
+                    <span class="row__sub">No JS required for layout complexity</span>
+                  </div>
+                  <span class="row__pill">Live</span>
+                </div>
+                <div class="row">
+                  <span class="row__icon" aria-hidden="true">🎛️</span>
+                  <div class="row__text">
+                    <span class="row__title">Design system</span>
+                    <span class="row__sub">Tokens, shadows, and scalable typography</span>
+                  </div>
+                  <span class="row__pill row__pill--alt">Ready</span>
+                </div>
+                <div class="row">
+                  <span class="row__icon" aria-hidden="true">🧩</span>
+                  <div class="row__text">
+                    <span class="row__title">Component patterns</span>
+                    <span class="row__sub">Cards, tables, carousels, accordions</span>
+                  </div>
+                  <span class="row__pill">Pro</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="device__bottom" aria-hidden="true"></div>
+          </div>
+        </aside>
+      </div>
+
+      <div class="hero__marquee" aria-hidden="true">
+        <div class="marquee">
+          <span>Crafted layout</span><span>•</span>
+          <span>Elegant motion</span><span>•</span>
+          <span>Glass UI</span><span>•</span>
+          <span>Scroll snap</span><span>•</span>
+          <span>Sticky sections</span><span>•</span>
+          <span>Premium gradients</span><span>•</span>
+          <span>Responsive grid</span><span>•</span>
+          <span>Dark mode</span><span>•</span>
+          <span>Crafted layout</span><span>•</span>
+          <span>Elegant motion</span><span>•</span>
+          <span>Glass UI</span><span>•</span>
+          <span>Scroll snap</span><span>•</span>
+          <span>Sticky sections</span><span>•</span>
+          <span>Premium gradients</span><span>•</span>
+          <span>Responsive grid</span><span>•</span>
+          <span>Dark mode</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Highlights -->
+    <section id="highlights" class="section">
+      <div class="container">
+        <header class="section__header">
+          <h2>Highlights that feel expensive</h2>
+          <p>Complex layout patterns, clean structure, and accessibility-minded details.</p>
+        </header>
+
+        <div class="grid grid--highlights">
+          <article class="card card--glow">
+            <div class="card__icon" aria-hidden="true">🫧</div>
+            <h3>Glass navigation</h3>
+            <p>Sticky header with blur + subtle border for depth, like premium product pages.</p>
+            <div class="card__meta">
+              <span class="pill">Sticky</span>
+              <span class="pill">Backdrop</span>
+              <span class="pill">A11y</span>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="card__icon" aria-hidden="true">🧠</div>
+            <h3>Design tokens</h3>
+            <p>CSS variables for color, type scale, shadows, and spacing — easy to theme.</p>
+            <div class="card__meta">
+              <span class="pill">Variables</span>
+              <span class="pill">Clamp</span>
+              <span class="pill">Scale</span>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="card__icon" aria-hidden="true">🧭</div>
+            <h3>Responsive grid</h3>
+            <p>Auto-fit cards and content density that adapts smoothly to screen size.</p>
+            <div class="card__meta">
+              <span class="pill">Grid</span>
+              <span class="pill">Auto-fit</span>
+              <span class="pill">Fluid</span>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="card__icon" aria-hidden="true">🎞️</div>
+            <h3>Motion, not chaos</h3>
+            <p>Polished transitions with safe fallbacks for <em>prefers-reduced-motion</em>.</p>
+            <div class="card__meta">
+              <span class="pill">Reduced motion</span>
+              <span class="pill">Keyframes</span>
+              <span class="pill">Focus</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Design section -->
+    <section id="design" class="section section--alt">
+      <div class="container">
+        <div class="split">
+          <div class="split__copy">
+            <h2>Design that breathes</h2>
+            <p>
+              Built with careful spacing, soft shadows, subtle borders, and a premium
+              gradient system. It aims to mimic the calm clarity of top-tier product sites.
+            </p>
+
+            <div class="feature-list">
+              <div class="feature">
+                <span class="feature__dot" aria-hidden="true"></span>
+                <div>
+                  <h3>Fluid typography</h3>
+                  <p>Uses <code>clamp()</code> for natural scaling across devices.</p>
+                </div>
+              </div>
+
+              <div class="feature">
+                <span class="feature__dot" aria-hidden="true"></span>
+                <div>
+                  <h3>Layered depth</h3>
+                  <p>Glass panels, gradients, noise, and micro-borders.</p>
+                </div>
+              </div>
+
+              <div class="feature">
+                <span class="feature__dot" aria-hidden="true"></span>
+                <div>
+                  <h3>Accessible by default</h3>
+                  <p>Strong focus rings, semantic markup, and readable contrast.</p>
+                </div>
+              </div>
+            </div>
+
+            <a class="btn btn--primary" href="#compare">Compare models</a>
+          </div>
+
+          <div class="split__visual" aria-hidden="true">
+            <div class="stack">
+              <div class="stack__card stack__card--a">
+                <div class="stack__title">Precision layout</div>
+                <div class="stack__bars">
+                  <span style="--w: 92%"></span>
+                  <span style="--w: 76%"></span>
+                  <span style="--w: 88%"></span>
+                </div>
+              </div>
+              <div class="stack__card stack__card--b">
+                <div class="stack__title">Motion grade</div>
+                <div class="stack__dial"></div>
+              </div>
+              <div class="stack__card stack__card--c">
+                <div class="stack__title">Theme tokens</div>
+                <div class="swatches">
+                  <span></span><span></span><span></span><span></span><span></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Scroll-snap gallery -->
+        <div class="snap" aria-label="Gallery">
+          <div class="snap__head">
+            <h3>Swipeable gallery</h3>
+            <p>Scroll-snap carousel (mouse wheel / touch), no JavaScript.</p>
+          </div>
+
+          <div class="snap__track" tabindex="0" aria-label="Scrollable gallery">
+            <article class="snap__item">
+              <h4>Silky hero</h4>
+              <p>Layered gradients + noise for depth.</p>
+              <div class="snap__art snap__art--1" aria-hidden="true"></div>
+            </article>
+            <article class="snap__item">
+              <h4>Glass panels</h4>
+              <p>Subtle blur, borders, and highlights.</p>
+              <div class="snap__art snap__art--2" aria-hidden="true"></div>
+            </article>
+            <article class="snap__item">
+              <h4>Micro interactions</h4>
+              <p>Hover, focus, and tap states tuned.</p>
+              <div class="snap__art snap__art--3" aria-hidden="true"></div>
+            </article>
+            <article class="snap__item">
+              <h4>Dark mode</h4>
+              <p>Auto adapts to system settings.</p>
+              <div class="snap__art snap__art--4" aria-hidden="true"></div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Performance (Sticky) -->
+    <section id="performance" class="section">
+      <div class="container">
+        <header class="section__header">
+          <h2>Performance, engineered</h2>
+          <p>Sticky storytelling with a “spec rail” that remains in view.</p>
+        </header>
+
+        <div class="sticky-layout">
+          <aside class="sticky-rail" aria-label="Key specifications">
+            <div class="rail">
+              <h3>Nova Studio</h3>
+              <p class="muted">Built for modern browsers. Elegant fallbacks included.</p>
+
+              <dl class="specs">
+                <div class="spec">
+                  <dt>Layout</dt><dd>Grid + Flex + clamp()</dd>
+                </div>
+                <div class="spec">
+                  <dt>Motion</dt><dd>Keyframes + reduced-motion</dd>
+                </div>
+                <div class="spec">
+                  <dt>UI</dt><dd>Glass + gradient tokens</dd>
+                </div>
+                <div class="spec">
+                  <dt>Assets</dt><dd>Zero external files</dd>
+                </div>
+              </dl>
+
+              <a class="btn btn--ghost" href="#faq">Read FAQ</a>
+            </div>
+          </aside>
+
+          <div class="story" aria-label="Performance story">
+            <article class="story__block">
+              <h3>Fast by design</h3>
+              <p>
+                This page uses no frameworks and no external assets. Everything from “images”
+                to backgrounds is generated with CSS gradients and shapes.
+              </p>
+              <div class="story__panel story__panel--a" aria-hidden="true"></div>
+            </article>
+
+            <article class="story__block">
+              <h3>Readable scale</h3>
+              <p>
+                Typography and spacing scale using <code>clamp()</code> so it remains balanced from mobile
+                to ultra-wide displays.
+              </p>
+              <div class="story__panel story__panel--b" aria-hidden="true"></div>
+            </article>
+
+            <article class="story__block">
+              <h3>Accessible motion</h3>
+              <p>
+                Motion reduces automatically when the user prefers less animation.
+                Focus rings are visible, and semantic HTML is used throughout.
+              </p>
+              <div class="story__panel story__panel--c" aria-hidden="true"></div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Compare -->
+    <section id="compare" class="section section--alt">
+      <div class="container">
+        <header class="section__header">
+          <h2>Compare Nova models</h2>
+          <p>Styled comparison table with emphasis states and clean readability.</p>
+        </header>
+
+        <div class="table-wrap" role="region" aria-label="Comparison table" tabindex="0">
+          <table class="compare">
+            <thead>
+              <tr>
+                <th scope="col">Feature</th>
+                <th scope="col">Nova</th>
+                <th scope="col" class="is-featured">Nova Studio</th>
+                <th scope="col">Nova Pro</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">Glass header</th>
+                <td>✓</td>
+                <td class="is-featured">✓</td>
+                <td>✓</td>
+              </tr>
+              <tr>
+                <th scope="row">Sticky storytelling</th>
+                <td>—</td>
+                <td class="is-featured">✓</td>
+                <td>✓</td>
+              </tr>
+              <tr>
+                <th scope="row">Scroll-snap gallery</th>
+                <td>✓</td>
+                <td class="is-featured">✓</td>
+                <td>✓</td>
+              </tr>
+              <tr>
+                <th scope="row">Token system</th>
+                <td>✓</td>
+                <td class="is-featured">✓</td>
+                <td>✓</td>
+              </tr>
+              <tr>
+                <th scope="row">Premium motion pack</th>
+                <td>—</td>
+                <td class="is-featured">✓</td>
+                <td>✓</td>
+              </tr>
+              <tr>
+                <th scope="row">Advanced theming</th>
+                <td>—</td>
+                <td class="is-featured">✓</td>
+                <td>✓</td>
+              </tr>
+              <tr>
+                <th scope="row">Best for</th>
+                <td>Quick demos</td>
+                <td class="is-featured">GitHub Pages showcase</td>
+                <td>Portfolio flagship</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- Pricing / Buy -->
+    <section id="pricing" class="section">
+      <div class="container">
+        <header class="section__header">
+          <h2>Pricing</h2>
+          <p>Just placeholder tiers — style and layout are the point.</p>
+        </header>
+
+        <div class="grid grid--pricing" id="buy">
+          <article class="price">
+            <h3>Nova</h3>
+            <p class="price__tag">£0</p>
+            <p class="muted">Starter layout kit</p>
+            <ul class="list">
+              <li>Hero + cards</li>
+              <li>Responsive grid</li>
+              <li>Dark mode</li>
+            </ul>
+            <a class="btn btn--ghost" href="#main">Download</a>
+          </article>
+
+          <article class="price price--featured" aria-label="Featured plan">
+            <div class="ribbon" aria-hidden="true">Most popular</div>
+            <h3>Nova Studio</h3>
+            <p class="price__tag">£29</p>
+            <p class="muted">Premium showcase</p>
+            <ul class="list">
+              <li>Sticky story rail</li>
+              <li>Scroll-snap gallery</li>
+              <li>Advanced motion</li>
+              <li>Comparison table</li>
+            </ul>
+            <a class="btn btn--primary" href="#main">Get Studio</a>
+          </article>
+
+          <article class="price">
+            <h3>Nova Pro</h3>
+            <p class="price__tag">£59</p>
+            <p class="muted">Portfolio flagship</p>
+            <ul class="list">
+              <li>Everything in Studio</li>
+              <li>Extra sections</li>
+              <li>Custom theming</li>
+            </ul>
+            <a class="btn btn--ghost" href="#main">Get Pro</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq" class="section section--alt">
+      <div class="container">
+        <header class="section__header">
+          <h2>FAQ</h2>
+          <p>CSS-only accordion using semantic <code>&lt;details&gt;</code>.</p>
+        </header>
+
+        <div class="faq">
+          <details>
+            <summary>Can I paste this into GitHub Pages directly?</summary>
+            <div class="faq__content">
+              <p>
+                Yes — add <strong>index.html</strong> and <strong>styles.css</strong> to the root of your repo,
+                then enable GitHub Pages in repo settings.
+              </p>
+            </div>
+          </details>
+
+          <details>
+            <summary>Does this require images or external libraries?</summary>
+            <div class="faq__content">
+              <p>
+                Nope. All visuals are gradients, shapes, and CSS effects. It’s purposely self-contained.
+              </p>
+            </div>
+          </details>
+
+          <details>
+            <summary>Is it mobile-friendly?</summary>
+            <div class="faq__content">
+              <p>
+                Yep — responsive grids, fluid type with <code>clamp()</code>, and a CSS-only mobile menu.
+              </p>
+            </div>
+          </details>
+
+          <details>
+            <summary>Can you tailor it to my brand / colours / sections?</summary>
+            <div class="faq__content">
+              <p>
+                Definitely. If you tell me your brand colours, logo text, and what sections you want,
+                I’ll re-theme it and add content (e.g., portfolio, product, HR dashboard, etc.).
+              </p>
+            </div>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer" role="contentinfo">
+      <div class="container footer__inner">
+        <div>
+          <div class="brand brand--footer">
+            <span class="brand__mark" aria-hidden="true"></span>
+            <span class="brand__name">Nova</span>
+          </div>
+          <p class="muted">
+            A premium HTML+CSS demo page to test layout capabilities on GitHub Pages.
+          </p>
+        </div>
+
+        <div class="footer__cols" aria-label="Footer links">
+          <div class="col">
+            <h4>Product</h4>
+            <a href="#highlights">Highlights</a>
+            <a href="#design">Design</a>
+            <a href="#performance">Performance</a>
+          </div>
+          <div class="col">
+            <h4>Explore</h4>
+            <a href="#compare">Compare</a>
+            <a href="#pricing">Pricing</a>
+            <a href="#faq">FAQ</a>
+          </div>
+          <div class="col">
+            <h4>Legal</h4>
+            <a href="#">Privacy</a>
+            <a href="#">Terms</a>
+            <a href="#">Cookies</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="container footer__fineprint">
+        <span>© <span id="year" aria-hidden="true">2026</span> Nova. Demo page.</span>
+        <span class="muted">Built with HTML + CSS only.</span>
+      </div>
+    </footer>
+  </main>
+
+  <!-- Floating CTA -->
+  <a class="float-cta" href="#buy" aria-label="Jump to buy section">
+    <span class="float-cta__dot" aria-hidden="true"></span>
+    Buy Nova Studio
+  </a>
 </body>
 </html>
-``
